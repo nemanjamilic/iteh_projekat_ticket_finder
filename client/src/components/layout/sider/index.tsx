@@ -12,6 +12,11 @@ import {
   IconButton,
   MuiList,
 } from "@pankod/refine-mui";
+
+
+
+import FeaturedPlayListRoundedIcon from '@mui/icons-material/FeaturedPlayListRounded';
+
 import {
   ListOutlined,
   Logout,
@@ -224,7 +229,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
   const dashboard = hasDashboard ? (
     <CanAccess resource="dashboard" action="list">
       <Tooltip
-        title={translate("dashboard.title", "Dashboard")}
+        title={translate("dashboard.title", "Main")}
         placement="right"
         disableHoverListener={!collapsed}
         arrow
@@ -248,21 +253,22 @@ export const Sider: typeof DefaultSider = ({ render }) => {
             justifyContent: "center",
           }}
         >
-          <ListItemIcon
+          <FeaturedPlayListRoundedIcon
             sx={{
               justifyContent: "center",
               minWidth: 36,
-              color: "#8080191",
+              color: "white",
               marginLeft:'6px',
               marginRight:'14px',
             }}
           >
             <Dashboard />
-          </ListItemIcon>
+          </FeaturedPlayListRoundedIcon>
           <ListItemText
-            primary={translate("dashboard.title", "Dashboard")}
+            primary={translate("dashboard.title", "Main")}
             primaryTypographyProps={{
               noWrap: true,
+              color: "white",
               fontSize: "16px",
               fontWeight: selectedKey === "/" ? "bold" : "normal",
             }}
@@ -391,7 +397,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
             display: { xs: "none", md: "block" },
             "& .MuiDrawer-paper": {
               width: drawerWidth,
-              bgcolor: "#FCFCFC",
+              backgroundImage: "linear-gradient(90deg, rgba(152,150,241,1) 0%, rgba(177,186,241,1) 100%)",
               overflow: "hidden",
               transition: "width 200ms cubic-bezier(0.4, 0, 0.6, 1) 0ms",
             },
@@ -419,13 +425,13 @@ export const Sider: typeof DefaultSider = ({ render }) => {
           </Box>
           <Button
             sx={{
-              background: "#475BE8",
+              background: "linear-gradient(90deg, rgba(152,150,241,1) 0%, rgba(213,155,246,1) 100%)",
               color: "primary.contrastText",
               textAlign: "center",
               borderRadius: 0,
               borderTop: "1px solid #ffffff1a",
               '&:hover':{
-              background: '#1e36e8'
+              background: 'linear-gradient(90deg, rgba(152,150,241,1) 0%, rgba(237,177,241,1) 100%)'
               }
             }}
             fullWidth
