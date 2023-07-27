@@ -7,8 +7,8 @@ const UserSchema = new mongoose.Schema({
     name: { type:String, required:true },
     email: {type:String, required:true },
     avatar: {type:String, required:true },
-    //referenca na model "Property", što znači da je povezano s drugim modelom "Property"
-    allProperties: [{type: mongoose.Schema.Types.ObjectId, ref: 'Property'}],
+    //referenca na model "Concert", što znači da je povezano s drugim modelom "Concert"
+    allConcerts: [{type: mongoose.Schema.Types.ObjectId, ref: 'Concert'}],
 
 });
 

@@ -118,7 +118,7 @@ const Home = () => {
                 mt="25px"
                 sx={{ background: '#d59bf6'}}
                 >
-                <Typography fontSize="18px" fontWeight={600} color="#FFFFFF"> LATEST CONCERTS</Typography>
+                <Typography fontSize="18px" fontWeight={600} color="#FFFFFF"> NEW CONCERTS</Typography>
                 <Box mt={2.5} sx={{display: 'flex', flexWrap:'wrap', gap:4}}>
                         <div>...Latest concerts...</div>
                 </Box>
