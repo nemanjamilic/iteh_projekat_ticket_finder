@@ -1,6 +1,8 @@
 
 import Home from './home';
 import AllConcerts from './all-concerts';
+import CreateConcert from './create-concert';
+import EditConcert from './edit-concert';
 import { Login } from './login';
 
 
@@ -9,5 +11,7 @@ import { Login } from './login';
 export {
   Home,
   Login,
-  AllConcerts
+  AllConcerts,
+  CreateConcert,
+  EditConcert
 };

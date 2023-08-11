@@ -32,7 +32,9 @@ import { parseJwt } from "utils/parse-jwt";
 import { 
   Login,
   Home,
-  AllConcerts
+  AllConcerts,
+  CreateConcert,
+  EditConcert
 
 } from "pages";
 
@@ -53,6 +55,8 @@ function App() {
               name: "concerts",
               options:{ label: 'Concerts'},
               list:AllConcerts,
+              create:CreateConcert,
+              edit:EditConcert,
               icon: <IoTicketSharp></IoTicketSharp>
             },
             {
