@@ -59,7 +59,7 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading,
                           required
                           inputProps={{'aria-label' : 'Without label'}}
                           defaultValue="apartment"
-                          {...register('propertyType', {required:true})}
+                          {...register('concertType', {required:true})}
                         >
                             <MenuItem value="apartment">
                               Music Festivals

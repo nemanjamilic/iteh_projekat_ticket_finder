@@ -165,10 +165,11 @@ const AllConcerts = () => {
   if(isError) return <Typography>Error...</Typography>
 
   return (
-    <Box>
+    <Box sx={{backgroundImage: "linear-gradient(90deg, rgba(152,150,241,1) 0%, rgba(177,186,241,1) 100%)", 
+    paddingLeft:'20px', paddingTop:'5px', paddingBottom:'20px', paddingRight:'20px', borderRadius:'35px'}}>
         <Box mt ="20px" sx={{display:"flex", flexWrap:"wrap", gap:3}}>
           <Stack direction="column" width="100%">
-            <Typography fontSize={25} fontWeight={700} color="#11142d">
+            <Typography fontSize={25} fontWeight={700} color="white">
               {!allConcerts.length ? 'There are no concerts' : 'All Concerts'}</Typography>
             <Box mb={2} mt={3} display='flex' width='84%' justifyContent="space-between" flexWrap="wrap">
                 <Box display="flex" gap={2} flexWrap='wrap' marginBottom={{xs:'20px', sm: 0}}>
@@ -194,6 +195,7 @@ const AllConcerts = () => {
                           }
                       ])
                       }}
+                      style={{ backgroundColor: 'white', borderRadius: '8px', border:'none'}}
                     />
                     {/* pretraga po tipu nekretnine*/}
                     <Select
@@ -213,6 +215,7 @@ const AllConcerts = () => {
                         }
                     ], 'replace')
                   }}
+                  style={{ backgroundColor: 'white', borderRadius: '8px', border:'none'}}
                     >
                       {/*padajuca lista za tip nekretnine, mapira jedan po jedan i prikazuje u meniju malim slovima*/}
                       <MenuItem value="">All</MenuItem>
@@ -269,18 +272,18 @@ const AllConcerts = () => {
                     title = {'Previous'}
                     /*racunanje trenutne stranice */
                     handleClick={() => setCurrent((prev) => prev - 1)}
-                    backgroundColor="#475be8"
+                    backgroundColor="#d59bf6"
                     color="#fcfcfc"
                     disabled={!(current>1)}
                   />
-                  <Box display={{xs:'hidden', sm:'flex'}} alignItems="center" gap="5px">
+                  <Box display={{xs:'hidden', sm:'flex'}} alignItems="center" gap="5px" color='white'>
                       Page{' '}<strong>{current} of {pageCount}</strong>
                   </Box>
                   <CustomButton
                     title = {'Next'}
                     /*racunanje trenutne stranice */
                     handleClick={() => setCurrent((prev) => prev + 1)}
-                    backgroundColor="#475be8"
+                    backgroundColor="#d59bf6"
                     color="#fcfcfc"
                     disabled={current === pageCount}
                   />
@@ -294,6 +297,7 @@ const AllConcerts = () => {
                     onChange={(e) => setPageSize(
                       e.target.value ? Number(e.target.value) : 10
                     )}
+                    style={{ backgroundColor: 'white', borderRadius: '8px', border:'none'}}
                   >
                     {[10, 20, 30, 40, 50].map((size) => (
                       <MenuItem key={size} value={size}>Show {size}</MenuItem>

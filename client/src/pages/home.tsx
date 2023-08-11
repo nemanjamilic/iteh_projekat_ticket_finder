@@ -18,12 +18,13 @@ const Home = () => {
 
 
     return(
-        <Box sx={{ display: 'flex' , backgroundColor: '#9896f1'}}>
+        <Box sx={{ display: 'flex' , backgroundColor: '#9896f1', borderRadius:'35px'}}>
         <Box
         sx={{  flex: 1,
             backgroundColor: '#9896f1',
             zIndex: 1, 
-            padding: '20px',}}
+            padding: '20px',
+            borderRadius:'35px'}}
         >
             <Typography fontSize={25} fontWeight={700} color="#FFFFFF">
                 Welcome to Ticket Finder <LocalActivityOutlinedIcon 

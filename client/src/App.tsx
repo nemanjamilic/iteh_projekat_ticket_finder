@@ -34,6 +34,7 @@ import {
   Home,
   AllConcerts,
   CreateConcert,
+  MyProfile,
   EditConcert
 
 } from "pages";
@@ -182,6 +183,7 @@ const authProvider: AuthProvider = {
             {
               name: "my-profile",
               options:{ label: 'My profile'},
+              list:MyProfile,
               icon: <AccountCircleOutlined></AccountCircleOutlined>
             },
           ]}

@@ -14,10 +14,10 @@ export interface ProfileProps {
     name: string,
     avatar: string,
     email: string,
-    properties: Array | undefined
+    concerts: Array | undefined
 }
 
-export interface PropertyProps {
+export interface ConcertProps {
     _id: string,
     title: string,
     description: string,

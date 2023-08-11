@@ -8,6 +8,7 @@ import SatisfactionBox from './charts/SatisfactionBox';
 import NumberOfAvailableTickets from './charts/NumberOfAvailableTickets';
 import CustomButton from './common/CustomButton';
 import ConcertCard from './common/ConcertCard';
+import Profile from './common/Profile';
 
 
 export {
@@ -18,5 +19,6 @@ export {
   SatisfactionBox,
   CustomButton,
   ConcertCard,
+  Profile,
   NumberOfAvailableTickets
 };

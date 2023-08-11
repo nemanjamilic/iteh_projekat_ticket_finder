@@ -3,6 +3,7 @@ import Home from './home';
 import AllConcerts from './all-concerts';
 import CreateConcert from './create-concert';
 import EditConcert from './edit-concert';
+import MyProfile from './my-profile';
 import { Login } from './login';
 
 
@@ -13,5 +14,6 @@ export {
   Login,
   AllConcerts,
   CreateConcert,
+  MyProfile,
   EditConcert
 };
