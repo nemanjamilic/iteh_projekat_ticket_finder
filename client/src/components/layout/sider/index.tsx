@@ -184,11 +184,11 @@ export const Sider: typeof DefaultSider = ({ render }) => {
                 "&.Mui-selected": {
                   "&:hover": {
                     backgroundColor: 
-                    isSelected ? '#1e36e8' :
+                    isSelected ? '#edb1f1' :
                     "transparent",
                   },
                   backgroundColor: 
-                  isSelected ? '#475be8' :
+                  isSelected ? '#d59bf6' :
                   "transparent",
                 },
                 justifyContent: "center",

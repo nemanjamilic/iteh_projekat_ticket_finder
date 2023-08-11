@@ -1,5 +1,6 @@
 
 import Home from './home';
+import AllConcerts from './all-concerts';
 import { Login } from './login';
 
 
@@ -7,5 +8,6 @@ import { Login } from './login';
 // i nakon toga se izvozi na korišćenje drugim delovima aplikacije.
 export {
   Home,
-  Login
+  Login,
+  AllConcerts
 };

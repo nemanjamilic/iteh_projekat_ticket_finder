@@ -16,6 +16,8 @@ import{
   VillaOutlined,
 } from '@mui/icons-material';
 
+import { IoTicketSharp } from 'react-icons/io5';
+
 import InfoIcon from '@mui/icons-material/Info';
 
 import dataProvider from "@pankod/refine-simple-rest";
@@ -30,6 +32,7 @@ import { parseJwt } from "utils/parse-jwt";
 import { 
   Login,
   Home,
+  AllConcerts
 
 } from "pages";
 
@@ -47,9 +50,10 @@ function App() {
           catchAll={<ErrorComponent />}
           resources={[
             {
-              name: "properties",
-              options:{ label: 'Properties'},
-              icon: <VillaOutlined></VillaOutlined>
+              name: "concerts",
+              options:{ label: 'Concerts'},
+              list:AllConcerts,
+              icon: <IoTicketSharp></IoTicketSharp>
             },
             {
               name: "agents",
