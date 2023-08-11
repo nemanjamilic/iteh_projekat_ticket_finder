@@ -246,9 +246,9 @@ export const Sider: typeof DefaultSider = ({ render }) => {
             py: 1,
             "&.Mui-selected": {
               "&:hover": {
-                backgroundColor: "transparent",
+                backgroundColor: "#edb1f1",
               },
-              backgroundColor: "transparent",
+              backgroundColor: "#d59bf6",
             },
             justifyContent: "center",
           }}
@@ -300,7 +300,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
           sx={{
             justifyContent: "center",
             minWidth: 36,
-            color: '#808191',
+            color: 'white',
           }}
         >
           <Logout />
@@ -309,6 +309,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
           primary={t("buttons.logout", "Logout")}
           primaryTypographyProps={{
             noWrap: true,
+            color: 'white',
             fontSize: "16px",
           }}
         />
