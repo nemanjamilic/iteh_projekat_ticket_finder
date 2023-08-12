@@ -31,6 +31,24 @@ const Home = () => {
                 sx={{ height: '35px', width: '35px', verticalAlign: 'middle' }}/>
                  
             </Typography>
+
+            <Box
+                flex = {1}
+                borderRadius="15px"
+                padding="20px"
+                bgcolor="#fcfcfc"
+                display="flex"
+                flexDirection="column"
+                minWidth="100%"
+                mt="25px"
+                sx={{ background: '#d59bf6'}}
+                >
+                <Typography fontSize="18px" fontWeight={600} color="#FFFFFF"> NEW CONCERTS</Typography>
+                <Box mt={2.5} sx={{display: 'flex', flexWrap:'wrap', gap:4}}>
+                        <div>...Latest concerts...</div>
+                </Box>
+
+            </Box>
             
             
             <Box
@@ -108,23 +126,7 @@ const Home = () => {
                     colors={['#9896f1', '#d59bf6']}                
                 />
             </Box>
-            <Box
-                flex = {1}
-                borderRadius="15px"
-                padding="20px"
-                bgcolor="#fcfcfc"
-                display="flex"
-                flexDirection="column"
-                minWidth="100%"
-                mt="25px"
-                sx={{ background: '#d59bf6'}}
-                >
-                <Typography fontSize="18px" fontWeight={600} color="#FFFFFF"> NEW CONCERTS</Typography>
-                <Box mt={2.5} sx={{display: 'flex', flexWrap:'wrap', gap:4}}>
-                        <div>...Latest concerts...</div>
-                </Box>
-
-            </Box>
+           
 
            
 

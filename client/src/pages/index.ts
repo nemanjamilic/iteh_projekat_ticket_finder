@@ -5,6 +5,9 @@ import CreateConcert from './create-concert';
 import EditConcert from './edit-concert';
 import MyProfile from './my-profile';
 import { Login } from './login';
+import ConcertDetails from './concert-details';
+import ManagerProfile from './manager-profile';
+import Managers from './manager';
 
 
 //predstavlja izvoz svih komponenti koje se koriste u aplikaciji. Svaka od ovih komponenti se uvozi iz svog odgovarajućeg fajla
@@ -15,5 +18,8 @@ export {
   AllConcerts,
   CreateConcert,
   MyProfile,
-  EditConcert
+  EditConcert,
+  ConcertDetails,
+  ManagerProfile,
+  Managers
 };

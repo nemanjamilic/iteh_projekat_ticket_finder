@@ -61,29 +61,29 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading,
                           defaultValue="apartment"
                           {...register('concertType', {required:true})}
                         >
-                            <MenuItem value="apartment">
+                            <MenuItem value="Music Festivals">
                               Music Festivals
                             </MenuItem>
-                            <MenuItem value="villa">
+                            <MenuItem value="EDM Festivals">
                               EDM Festivals
                             </MenuItem>
-                            <MenuItem value="farmhouse">
+                            <MenuItem value="Classical concerts">
                               Classical concerts
                             </MenuItem>
-                            <MenuItem value="condos">
+                            <MenuItem value="Opera shows">
                               Opera shows
                             </MenuItem>
-                            <MenuItem value="townhouse">
+                            <MenuItem value="RNB Concerts">
                               RNB Concerts
                             </MenuItem>
-                            <MenuItem value="duplex">
+                            <MenuItem value="Pop Concerts">
                               Pop Concerts
                             </MenuItem>
-                            <MenuItem value="studio">
+                            <MenuItem value="KPOP Concerts">
                               KPOP Concerts
                             </MenuItem>
-                            <MenuItem value="chalet">
-                              Rave Festivals
+                            <MenuItem value="Rock Concerts">
+                              Rock Concerts
                             </MenuItem>
                         </Select>
                   </FormControl>

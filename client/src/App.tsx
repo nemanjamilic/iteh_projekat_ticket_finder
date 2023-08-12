@@ -35,7 +35,10 @@ import {
   AllConcerts,
   CreateConcert,
   MyProfile,
-  EditConcert
+  EditConcert,
+  ConcertDetails,
+  ManagerProfile,
+  Managers
 
 } from "pages";
 
@@ -167,12 +170,15 @@ const authProvider: AuthProvider = {
               options:{ label: 'Concerts'},
               list:AllConcerts,
               create:CreateConcert,
+              show:ConcertDetails,
               edit:EditConcert,
               icon: <IoTicketSharp></IoTicketSharp>
             },
             {
-              name: "agents",
-              options:{ label: 'Agents'},
+              name: "managers",
+              options:{ label: 'Managers'},
+              list:Managers,
+              show:ManagerProfile,
               icon: <PeopleAltOutlined></PeopleAltOutlined>
             },
             {
