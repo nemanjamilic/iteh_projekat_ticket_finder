@@ -220,7 +220,7 @@ const AllConcerts = () => {
                       {/*padajuca lista za tip nekretnine, mapira jedan po jedan i prikazuje u meniju malim slovima*/}
                       <MenuItem value="">All</MenuItem>
                       {['Music Festivals', 'EDM Festivals', 'Classical concerts', 'Opera shows', 'RNB Concerts', 'Pop Concerts', 'KPOP Concerts', 'Rock Concerts'].map((type) => (
-                          <MenuItem key={type} value={type.toLowerCase()}>{type}</MenuItem>
+                          <MenuItem key={type} value={type}>{type}</MenuItem>
                       ))}
                     </Select>
                 </Box>
