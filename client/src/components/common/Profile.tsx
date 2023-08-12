@@ -1,4 +1,4 @@
-import { Email, Phone, Place } from "@mui/icons-material";
+import { Email, Phone } from "@mui/icons-material";
 import { Box, Stack, Typography } from "@pankod/refine-mui";
 
 import { ProfileProps, ConcertProps } from "interfaces/common";
@@ -27,8 +27,8 @@ const Profile = ({ type, name, avatar, email, concerts }: ProfileProps) => (
             >
                 <img
                     src="https://img.freepik.com/free-photo/joyful-young-pretty-caucasian-girl-holding-airplane-tickets-doing-yes-gesture-isolated-purple-wall_141793-112321.jpg?w=996&t=st=1691794420~exp=1691795020~hmac=cf18b496ea2c68383e84326ae06d4b8f08bba89a3904f6b1191b2b1bc974a077"
-                    width={270}
-                    height={280}
+                    width={280}
+                    height={250}
                     alt="abstract"
                     className="my_profile-bg"
                 />
@@ -73,35 +73,12 @@ const Profile = ({ type, name, avatar, email, concerts }: ProfileProps) => (
                                     {name}
                                 </Typography>
                                 <Typography fontSize={16} color="#808191">
-                                    Ticket Finder Agent
+                                    Ticket Manager
                                 </Typography>
                             </Stack>
 
                             <Stack direction="column" gap="30px">
-                                <Stack gap="15px">
-                                    <Typography
-                                        fontSize={14}
-                                        fontWeight={500}
-                                        color="#808191"
-                                    >
-                                        Address
-                                    </Typography>
-                                    <Box
-                                        display="flex"
-                                        flexDirection="row"
-                                        alignItems="center"
-                                        gap="10px"
-                                    >
-                                        <Place sx={{ color: "#11142D" }} />
-                                        <Typography
-                                            fontSize={14}
-                                            color="#11142D"
-                                        >
-                                            1234 Somet street, London, UK
-                                        </Typography>
-                                    </Box>
-                                </Stack>
-
+                                
                                 <Stack
                                     direction="row"
                                     flexWrap="wrap"
@@ -114,7 +91,7 @@ const Profile = ({ type, name, avatar, email, concerts }: ProfileProps) => (
                                             fontWeight={500}
                                             color="#808191"
                                         >
-                                            Phone Number
+                                            Contact
                                         </Typography>
                                         <Box
                                             display="flex"
@@ -128,7 +105,7 @@ const Profile = ({ type, name, avatar, email, concerts }: ProfileProps) => (
                                                 color="#11142D"
                                                 noWrap
                                             >
-                                                +0123 456 789
+                                                +381 444 789
                                             </Typography>
                                         </Box>
                                     </Stack>
@@ -139,7 +116,7 @@ const Profile = ({ type, name, avatar, email, concerts }: ProfileProps) => (
                                             fontWeight={500}
                                             color="#808191"
                                         >
-                                            Email
+                                            Email address
                                         </Typography>
                                         <Box
                                             display="flex"
