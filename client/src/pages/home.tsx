@@ -10,18 +10,35 @@ import{
     PropertyReferrals,
     SatisfactionBox,
     TotalRevenue,
-    NumberOfAvailableTickets
+    NumberOfAvailableTickets,
+    ConcertCard
 } from 'components';
  
 
 const Home = () => {
+    {/*za vracanje propertija koristimo ovu kuku */}
+    const {data, isLoading, isError} = useList({
+        resource:'concerts',
+        config: {
+            pagination:{
+            pageSize: 6
+            }
+        }
 
+
+    })
+//koristi se opcionalni operator ?. da bi se izbeglo pristupanje undefined vrednostima 
+//u objektu data. Ako data ne postoji, uzmemo prazan niz umesto undefined vrednosti.
+    const latestConcerts = data?.data ?? [];
+
+    if(isLoading) return <Typography>Loading...</Typography>
+    if(isError) return <Typography>Something went wrong!</Typography>
 
     return(
-        <Box sx={{ display: 'flex' , backgroundColor: '#9896f1', borderRadius:'35px'}}>
+        <Box sx={{ display: 'flex' , backgroundImage: "linear-gradient(90deg, rgba(152,150,241,1) 0%, rgba(177,186,241,1) 100%)", borderRadius:'35px'}}>
         <Box
         sx={{  flex: 1,
-            backgroundColor: '#9896f1',
+            backgroundImage: "linear-gradient(90deg, rgba(152,150,241,1) 0%, rgba(177,186,241,1) 100%)",
             zIndex: 1, 
             padding: '20px',
             borderRadius:'35px'}}
@@ -45,7 +62,17 @@ const Home = () => {
                 >
                 <Typography fontSize="18px" fontWeight={600} color="#FFFFFF"> NEW CONCERTS</Typography>
                 <Box mt={2.5} sx={{display: 'flex', flexWrap:'wrap', gap:4}}>
-                        <div>...Latest concerts...</div>
+                {latestConcerts.map((concert) => (
+
+                    <ConcertCard
+                    key={concert._id}
+                    id={concert._id}
+                    title={concert.title}
+                    location={concert.location}
+                    price={concert.price}
+                    photo={concert.photo}
+                    />
+                ))}
                 </Box>
 
             </Box>

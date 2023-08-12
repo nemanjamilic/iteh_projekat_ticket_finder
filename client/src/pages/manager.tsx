@@ -17,8 +17,9 @@ const Managers = () => {
     if (isError) return <div>error...</div>;
 
     return (
-        <Box>
-            <Typography fontSize={25} fontWeight={700} color="#11142d">
+        <Box sx={{backgroundImage: "linear-gradient(90deg, rgba(152,150,241,1) 0%, rgba(177,186,241,1) 100%)", 
+        padding:'10px', borderRadius:'25px'}}>
+            <Typography fontSize={25} fontWeight={700} color="white">
                 Managers List
             </Typography>
 
@@ -29,6 +30,7 @@ const Managers = () => {
                     flexWrap: "wrap",
                     gap: "20px",
                     backgroundColor: "#fcfcfc",
+                    borderRadius:'25px'
                 }}
             >
                 {allManagers.map((manager) => (

@@ -1,4 +1,4 @@
-import { EmailOutlined, LocationCity, Phone, Place } from "@mui/icons-material";
+import { EmailOutlined, CardMembership, Phone } from "@mui/icons-material";
 import { useGetIdentity } from "@pankod/refine-core";
 import { Box, Stack, Typography } from "@pankod/refine-mui";
 import { Link } from "@pankod/refine-react-router-v6";
@@ -107,7 +107,7 @@ const ManagerCard = ({
                         name="+381 3234 141"
                     />
                     <InfoBar
-                        icon={<LocationCity sx={{ color: "#808191" }} />}
+                        icon={<CardMembership sx={{ color: "#808191" }} />}
                         name={`${noOfConcerts} Concerts`}
                     />
                 </Stack>
