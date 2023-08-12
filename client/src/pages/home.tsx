@@ -7,9 +7,7 @@ import myImage2 from '../assets/concert12.jpg';
 
 import{
     PieChart,
-    PropertyReferrals,
     SatisfactionBox,
-    TotalRevenue,
     NumberOfAvailableTickets,
     ConcertCard
 } from 'components';

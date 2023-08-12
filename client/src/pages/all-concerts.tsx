@@ -53,7 +53,7 @@ const AllConcerts = () => {
           })
         );
           // proveri da li je  admin i oznaci u bazi
-          if (profileObj.email === "homenow.manager@gmail.com") {
+          if (profileObj.email === "ticketfinder666@gmail.com") {
             localStorage.setItem("isAdmin", "true");
           } else {
             localStorage.removeItem("isAdmin");

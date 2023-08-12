@@ -34,7 +34,7 @@ const Managers = () => {
                 }}
             >
                 {allManagers.map((manager) => (
-                    (manager.email !== "homenow.manager@gmail.com") && (
+                    (manager.email !== "ticketfinder666@gmail.com") && (
                         <ManagerCard
                         key={manager._id}
                         id={manager._id}

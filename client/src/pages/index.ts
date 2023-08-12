@@ -8,6 +8,7 @@ import { Login } from './login';
 import ConcertDetails from './concert-details';
 import ManagerProfile from './manager-profile';
 import Managers from './manager';
+import AdminHome from './admin_homepage';
 
 
 //predstavlja izvoz svih komponenti koje se koriste u aplikaciji. Svaka od ovih komponenti se uvozi iz svog odgovarajućeg fajla
@@ -21,5 +22,6 @@ export {
   EditConcert,
   ConcertDetails,
   ManagerProfile,
-  Managers
+  Managers,
+  AdminHome
 };

@@ -38,7 +38,8 @@ import {
   EditConcert,
   ConcertDetails,
   ManagerProfile,
-  Managers
+  Managers,
+  AdminHome
 
 } from "pages";
 
@@ -95,7 +96,7 @@ const authProvider: AuthProvider = {
         })
       );
          // proveri da li je  admin i oznaci u bazi
-        if (profileObj.email === "homenow.manager@gmail.com") {
+        if (profileObj.email === "ticketfinder666@gmail.com") {
           localStorage.setItem("isAdmin", "true");
         } else {
           localStorage.removeItem("isAdmin");
@@ -154,6 +155,56 @@ const authProvider: AuthProvider = {
   },
 };
 
+//kreranje promenjive isAdmin samo ukoliko je u bazi data kolona true
+const isAdmin = localStorage.getItem("isAdmin") === "true";
+
+//ako je ulogovan admin
+if(isAdmin){
+  return(
+    <ColorModeContextProvider>
+    <CssBaseline />
+    <GlobalStyles styles={{ html: { WebkitFontSmoothing: "auto" } }} />
+    <RefineSnackbarProvider>
+      <Refine
+      //podatke daje server
+        dataProvider={dataProvider("http://localhost:8080/api/v1")}
+        notificationProvider={notificationProvider}
+        ReadyPage={ReadyPage}
+        catchAll={<ErrorComponent />}
+        resources={[
+          {
+            name: "concerts",
+            options:{ label: 'Concerts'},
+            list:AllConcerts,
+            create:CreateConcert,
+            show:ConcertDetails,
+            edit:EditConcert,
+            icon: <IoTicketSharp style={{height:'20px', width:'20px'}}></IoTicketSharp>
+          },
+          {
+            name: "managers",
+            options:{ label: 'Managers'},
+            list:Managers,
+            show:ManagerProfile,
+            icon: <PeopleAltOutlined></PeopleAltOutlined>
+          },
+
+        ]}
+        Title={Title}
+        Sider={Sider}
+        Layout={Layout}
+        Header={Header}
+        routerProvider={routerProvider}
+        authProvider={authProvider}
+        LoginPage={Login}
+        DashboardPage={AdminHome}
+      />
+    </RefineSnackbarProvider>
+  </ColorModeContextProvider>
+  );
+}
+//nije admin
+
   return (
     <ColorModeContextProvider>
       <CssBaseline />
@@ -172,7 +223,7 @@ const authProvider: AuthProvider = {
               create:CreateConcert,
               show:ConcertDetails,
               edit:EditConcert,
-              icon: <IoTicketSharp></IoTicketSharp>
+              icon: <IoTicketSharp style={{height:'20px', width:'20px'}}></IoTicketSharp>
             },
             {
               name: "managers",

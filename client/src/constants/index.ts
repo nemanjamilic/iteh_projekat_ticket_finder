@@ -1,28 +1,28 @@
 //koriscene na dashboardu za status barove
-export const propertyReferralsInfo = [
+export const concertReferralsInfo = [
     {
       title: 'Social Media',
       percentage: 64,
-      color: '#6C5DD3',
+      color: '#9896f1',
     },
     {
       title: 'Marketplace',
       percentage: 40,
-      color: '#7FBA7A',
+      color: '#9896f1',
     },
     {
       title: 'Websites',
       percentage: 50,
-      color: '#FFCE73',
+      color: '#9896f1',
     },
     {
       title: 'Digital Ads',
       percentage: 80,
-      color: '#FFA2C0',
+      color: '#9896f1',
     },
     {
       title: 'Others',
       percentage: 15,
-      color: '#F45252',
+      color: '#9896f1',
     },
   ];

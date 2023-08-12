@@ -2,7 +2,7 @@
 
 // charts
 import PieChart from './charts/PieChart';
-import PropertyReferrals from './charts/PropertyReferrals';
+import ConcertReferrals from './charts/ConcertReferrals';
 import TotalRevenue from './charts/TotalRevenue';
 import SatisfactionBox from './charts/SatisfactionBox';
 import NumberOfAvailableTickets from './charts/NumberOfAvailableTickets';
@@ -15,7 +15,7 @@ import ManagerCard from './manager/ManagerCard';
 export {
 
   PieChart,
-  PropertyReferrals,
+  ConcertReferrals,
   TotalRevenue,
   SatisfactionBox,
   CustomButton,

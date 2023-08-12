@@ -142,7 +142,7 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading,
               <CustomButton
                 type="submit"
                 title={formLoading ? 'Submitting...' : 'Submit'}
-                backgroundColor="#475be8"
+                backgroundColor="#d59bf6"
                 color="#fcfcfc"
               />
           </form>

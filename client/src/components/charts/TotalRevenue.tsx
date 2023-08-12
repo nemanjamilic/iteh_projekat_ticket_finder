@@ -17,22 +17,23 @@ const totalRevenue = () => {
       display="flex"
       flexDirection="column"
       borderRadius="15px"
+      sx={{backgroundColor:'#d59bf6'}}
     >
-      <Typography fontSize={18} fontWeight={600} color="#11142d">
+      <Typography fontSize={18} fontWeight={600} color="white">
         Total Revenue
       </Typography>
 
       <Stack my="20px" direction="row" gap={4} flexWrap="wrap">
-        <Typography fontSize={28} fontWeight={700} color='#11142d'>$236,535</Typography>
+        <Typography fontSize={28} fontWeight={700} color='white'>$556,987</Typography>
         <Stack direction="row" alignItems="center" gap={1} >
           <ArrowCircleUpRounded sx={{
-            fontSize: 25, color: "#475be8"
+            fontSize: 25, color: "white"
           }}/>
           <Stack>
-            <Typography fontSize={15} color="#475be8">
-              0.8%
+            <Typography fontSize={15} color="white">
+              0.3%
             </Typography>
-            <Typography fontSize={12} color="#808191">
+            <Typography fontSize={12} color="white">
               Than Last Month
             </Typography>
           </Stack>

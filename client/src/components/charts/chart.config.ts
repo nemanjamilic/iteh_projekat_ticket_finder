@@ -18,7 +18,7 @@ export const TotalRevenueOptions: ApexOptions = {
       show: false,
     },
   },
-  colors: ['#475BE8', '#CFC8FF'],
+  colors: ['#FFF', '#9896f1'],
   plotOptions: {
     bar: {
       borderRadius: 4,
@@ -38,10 +38,18 @@ export const TotalRevenueOptions: ApexOptions = {
   },
   xaxis: {
     categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+    labels: {
+      style: {
+        colors: ['#FFF', '#FFF', '#FFF', '#FFF', '#FFF', '#FFF', '#FFF'],
+      },
+    },
   },
   yaxis: {
     title: {
       text: '$ (thousands)',
+      style: {
+        color: '#FFF',
+      },
     },
   },
   fill: {

@@ -27,7 +27,7 @@ const Profile = ({ type, name, avatar, email, concerts }: ProfileProps) => (
                 }}
             >
                 <img
-                    src="https://img.freepik.com/free-photo/joyful-young-pretty-caucasian-girl-holding-airplane-tickets-doing-yes-gesture-isolated-purple-wall_141793-112321.jpg?w=996&t=st=1691794420~exp=1691795020~hmac=cf18b496ea2c68383e84326ae06d4b8f08bba89a3904f6b1191b2b1bc974a077"
+                    src="https://www.rollingstone.com/wp-content/uploads/2023/07/AdobeStock_62358446.jpeg?w=1581&h=1054&crop=1"
                     width={280}
                     height={250}
                     alt="abstract"
