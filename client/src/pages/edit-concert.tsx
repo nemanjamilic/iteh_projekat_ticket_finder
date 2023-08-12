@@ -18,7 +18,7 @@ const EditConcert = () => {
     } = useForm();
 
 
-    //U handleImageChange se definise funkcija za promenu slike za nekretninu. 
+    //U handleImageChange se definise funkcija za promenu slike za koncert. 
   //Ova funkcija prima fajl kao argument, zatim se kreira novi Promise koji koristi FileReader API kako bi se 
   //pretvorio fajl u Data URL, nakon cega se stanje concertImage azurira sa novim imenom i URL-om.
     const handleImageChange = (file: File) => {
@@ -34,12 +34,12 @@ const EditConcert = () => {
         );
     };
 
-    //U onFinishHandler se definise funkcija koja se poziva kada se formular za kreiranje nekretnine zavrsi. 
-//Prvo se proverava da li je korisnik dodao sliku za nekretninu. Ako nije, prikazuje se upozorenje
+    //U onFinishHandler se definise funkcija koja se poziva kada se formular za kreiranje koncerta zavrsi. 
+//Prvo se proverava da li je korisnik dodao sliku za koncert. Ako nije, prikazuje se upozorenje
     const onFinishHandler = async (data: FieldValues) => {
         if (!concertImage.name) return alert("Please upload a concert image");
 
-        //u suprotnom poziva se onFinish funkcija i salju se podaci, URL slike za nekretninu i email korisnika.
+        //u suprotnom poziva se onFinish funkcija i salju se podaci, URL slike za k i email korisnika.
         await onFinish({
             ...data,
             photo: concertImage.url,

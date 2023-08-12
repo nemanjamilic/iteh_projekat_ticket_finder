@@ -5,7 +5,7 @@ import { Typography, Box, Card, CardMedia, CardContent, Stack } from "@pankod/re
 import { ConcertCardProps } from "interfaces/concert";
 
 
-//prima parametra iz interfejsa i prikazuje na kartici nekretnine
+//prima parametra iz interfejsa i prikazuje na kartici koncerta
 const ConcertCard = ({id, title, location, price, photo}: ConcertCardProps) => {
   return (
     <Card

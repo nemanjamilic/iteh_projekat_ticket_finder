@@ -153,7 +153,7 @@ const AllConcerts = () => {
     const logicalFilters = filters.flatMap((item) => ('field' in item ? item : []))
 
     return {
-      //currentFilterValues omogućava filtriranje po nazivu nekretnine i tipu imovine.
+      //currentFilterValues omogućava filtriranje po nazivu koncerta i tipu imovine.
       // Ako filter ne postoji, koristi se podrazumevana vrednost ''.
       title: logicalFilters.find((item) => item.field === 'title')?.value || '',
       concertType: logicalFilters.find((item) => item.field === 'concertType')?.value || '',
@@ -197,7 +197,7 @@ const AllConcerts = () => {
                       }}
                       style={{ backgroundColor: 'white', borderRadius: '8px', border:'none'}}
                     />
-                    {/* pretraga po tipu nekretnine*/}
+                    {/* pretraga po tipu koncerta*/}
                     <Select
                       variant="outlined"
                       color="info"
@@ -217,7 +217,7 @@ const AllConcerts = () => {
                   }}
                   style={{ backgroundColor: 'white', borderRadius: '8px', border:'none'}}
                     >
-                      {/*padajuca lista za tip nekretnine, mapira jedan po jedan i prikazuje u meniju malim slovima*/}
+                      {/*padajuca lista za tip koncerta, mapira jedan po jedan i prikazuje u meniju malim slovima*/}
                       <MenuItem value="">All</MenuItem>
                       {['Music Festivals', 'EDM Festivals', 'Classical concerts', 'Opera shows', 'RNB Concerts', 'Pop Concerts', 'KPOP Concerts', 'Rock Concerts'].map((type) => (
                           <MenuItem key={type} value={type}>{type}</MenuItem>

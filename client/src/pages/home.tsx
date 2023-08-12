@@ -14,7 +14,7 @@ import{
  
 
 const Home = () => {
-    {/*za vracanje propertija koristimo ovu kuku */}
+    {/*za vracanje koncerta koristimo ovu kuku */}
     const {data, isLoading, isError} = useList({
         resource:'concerts',
         config: {

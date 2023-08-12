@@ -163,7 +163,7 @@ const ConcertDetails = () => {
     {/*za brisanje koncerta*/}
     //handleDeleteConcert() funkcija se poziva kada korisnik klikne na dugme za brisanje koncerta.
     // U ovoj funkciji se prikazuje prozor za potvrdu brisanja, a ako korisnik potvrdi brisanje, poziva 
-    //se funkcija mutate() koja briše propertij. U slučaju uspešnog brisanja, korisnik se preusmerava na stranicu sa listom koncerta.
+    //se funkcija mutate() koja briše koncert. U slučaju uspešnog brisanja, korisnik se preusmerava na stranicu sa listom koncerta.
     const handleDeleteConcert = () => {
         const response = confirm(
             "Are you sure you want to delete this concert?",

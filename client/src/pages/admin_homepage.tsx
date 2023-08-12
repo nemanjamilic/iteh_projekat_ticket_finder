@@ -12,7 +12,7 @@ import{
  
 
 const AdminHome = () => {
-    {/*za vracanje propertija koristimo ovu kuku */}
+    {/*za vracanje koncerta koristimo ovu kuku */}
     const {data, isLoading, isError} = useList({
         resource:'concerts',
         config: {
@@ -25,7 +25,7 @@ const AdminHome = () => {
     })
 //koristi se opcionalni operator ?. da bi se izbeglo pristupanje undefined vrednostima 
 //u objektu data. Ako data ne postoji, uzmemo prazan niz umesto undefined vrednosti.
-    const latestProperties = data?.data ?? [];
+    const latestConcerts = data?.data ?? [];
 
     if(isLoading) return <Typography>Loading...</Typography>
     if(isError) return <Typography>Something went wrong!</Typography>
@@ -81,7 +81,7 @@ const AdminHome = () => {
                 >
                 <Typography fontSize="18px" fontWeight={600} color="white"> Latest concerts </Typography>
                 <Box mt={2.5} sx={{display: 'flex', flexWrap:'wrap', gap:4, }}>
-                {latestProperties.map((concert) => (
+                {latestConcerts.map((concert) => (
 
                     <ConcertCard
                     key={concert._id}
