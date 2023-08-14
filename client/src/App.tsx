@@ -233,11 +233,6 @@ if(isAdmin){
               icon: <PeopleAltOutlined></PeopleAltOutlined>
             },
             {
-              name: "about-us",
-              options:{ label: 'About us'},
-              icon: <InfoIcon></InfoIcon>
-            },
-            {
               name: "my-profile",
               options:{ label: 'My profile'},
               list:MyProfile,

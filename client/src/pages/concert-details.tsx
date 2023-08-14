@@ -25,7 +25,7 @@ function checkImage(url: any) {
 }
 
 
-//za generisanje random broja zvezdica
+//za generisanje random broja kalendarcica
 function generateRandomArray() {
   let length = Math.floor(Math.random() * 5) + 1;
   let arr = [];
